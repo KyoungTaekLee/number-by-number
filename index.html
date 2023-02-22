@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="root">
+  </div>
+  <script>
+    let root = document.getElementById("root");
+    let a = 0;
+    for (let i = 1; i <= 3; i++) {
+      for (let j = 1; j <= 9; j++) {
+        for (let k = 1; k <= 3; k++) {
+          let result = j * (k + a);
+          document.write((k + a) + "*" + j + "=" + result + " ");
+        }
+        document.write("<br>");
+      }
+      a += 3;
+      document.write("<br>");
+    }
+  </script>
+</body>
+
+</html>
